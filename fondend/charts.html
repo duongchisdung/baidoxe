@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu đồ thống kê - Parking Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+</head>
+<body>
+    <h1>📊 Biểu đồ thống kê</h1>
+    <a href="index.html" class="back-link">⬅️ Quay lại trang chính</a>
+
+    <div class="charts-container">
+        <div class="chart-section">
+            <h2>💰 Doanh thu theo ngày</h2>
+            <div class="ct-revenue-chart ct-major-tenth"></div>
+        </div>
+        <div class="chart-section">
+            <h2>🚗 Số lượng xe theo khu vực</h2>
+            <div class="ct-vehicles-chart ct-major-tenth"></div>
+        </div>
+        <div class="chart-section">
+            <h2>🚙 Tỷ lệ loại xe</h2>
+            <div class="ct-vehicle-types-chart ct-major-tenth"></div>
+        </div>
+        <div class="chart-section">
+            <h2>👤 Số lượng xe theo chủ xe</h2>
+            <div class="ct-users-chart ct-major-tenth"></div>
+        </div>
+        <div class="chart-section">
+            <h2>⏰ Thời gian hoạt động chủ yếu</h2>
+            <div class="ct-activity-chart ct-major-tenth"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Manager v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🚗 Parking Manager v1.0</h1>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Quản lý phương tiện</h2>
+
+            <label for="searchVehicle">Tìm kiếm xe</label>
+            <input type="text" id="searchVehicle" placeholder="Nhập biển số hoặc chủ xe">
+            <button onclick="searchVehicle()">🔍 Tìm kiếm</button>
+
+            <label for="addIndex">Vị trí cần thêm</label>
+            <input type="number" id="addIndex" placeholder="Số ô (1-9)">
+            <button onclick="addVehicleAtPosition()">➕ Thêm phương tiện</button>
+
+            <label for="removeIndex">Vị trí cần xóa</label>
+            <input type="number" id="removeIndex" placeholder="Số ô (1-9)">
+            <button onclick="removeSelectedVehicle()">🗑️ Xóa phương tiện</button>
+
+            <button id="viewEntryTimeBtn">📅 Xem ngày gửi xe</button>
+
+            <a href="charts.html" class="chart-link">📊 Xem biểu đồ thống kê</a>
+        </div>
+
+        <div class="parking-area">
+            <div class="section" id="A1"><h3>A1</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+            <div class="section" id="B1"><h3>B1</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+            <div class="section" id="C1"><h3>C1</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+            <div class="section" id="A2"><h3>A2</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+            <div class="section" id="B2"><h3>B2</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+            <div class="section" id="C2"><h3>C2</h3><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div><div class="parking-spot"></div></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
